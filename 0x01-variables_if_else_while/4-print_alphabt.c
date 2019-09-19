@@ -19,7 +19,7 @@ int main(void)
 	if (alp == 'e')
 		{
 		alp = 'e';
-		} 
+		}
 	else if (alp == 'q')
 		{
 		alp = 'q';
