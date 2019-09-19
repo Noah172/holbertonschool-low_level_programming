@@ -13,8 +13,8 @@
 
 int main(void)
 {
-	char num;
-	char com = 44;
+	int num;
+	int com = 44;
 
 	for (num = 48 ; num <= 57 ; num++)
 	{
@@ -22,7 +22,7 @@ int main(void)
 		if (num < 57)
 		{
 		putchar (com);
-		putchar (' ');
+		putchar (32);
 		}
 	}
 		putchar ('\n');
