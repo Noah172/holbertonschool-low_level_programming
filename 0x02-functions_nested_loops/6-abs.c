@@ -1,21 +1,24 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _abs - computes the absolute value of an integer
  *
- * Return: Always 0.
+ * @v: is the variable
+ * Return: 1 lowercase and 0 to lowercase
  */
 int _abs(int v)
 {
 	if (v < 0)
 	{
 		int a;
+
 		a = v * -1;
+
 		return (a);
 	}
 	else
 	{
-		return(v);
+		return (v);
 	}
 
 }
