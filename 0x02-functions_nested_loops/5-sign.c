@@ -1,10 +1,10 @@
 #include "holberton.h"
 
-
 /**
- * main - check the code for Holberton School students.
+ * print_sign - Print the sign if is positive or negative
  *
- * Return: Always 0.
+ * @n: is the variable
+ * Return: alwais 0
  */
 int print_sign(int n)
 {
@@ -23,5 +23,5 @@ int print_sign(int n)
 		_putchar(48);
 		return (0);
 	}
-	return(0);
+	return (0);
 }
