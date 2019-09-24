@@ -1,9 +1,13 @@
 #include "holberton.h"
 
+/* betty style doc for function main goes there */
+
 /**
- * trying to print the alphabet
+ *print_alphabet - prints the alphabet
  *
- * Return: Always 0.
+ *the _putchar is a command made for this exercice
+ * eclared in the holberton.h  *header
+ * Return: Always 0 (Success)
  */
 
 void print_alphabet(void)
