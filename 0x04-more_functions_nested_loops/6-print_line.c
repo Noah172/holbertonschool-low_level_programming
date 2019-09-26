@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *print_line - will print the lines 
+ *print_line - will print the lines
  *@n: is the variable who give the number of lines
  *
  *
@@ -14,12 +14,10 @@ void print_line(int n)
 
 	if (l > 0)
 	{
-		do
-		{
+		do {
 			_putchar(i);
 			l--;
-		}
-		while (l > 0);
+		} while (l > 0)
 	}
 		_putchar('\n');
 }
