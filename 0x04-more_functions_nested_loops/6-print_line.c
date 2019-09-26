@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- *
+ *print_line - will print the lines 
+ *@n: is the variable who give the number of lines
  *
  *
  */
