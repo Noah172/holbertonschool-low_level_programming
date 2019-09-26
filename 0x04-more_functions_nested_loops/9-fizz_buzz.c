@@ -2,10 +2,10 @@
 #include "holberton.h"
 
 /**
+ *main - where the magic happends
  *
  *
- *
- *
+ *Return: allways return 0
  */
 
 int main(void)
@@ -28,7 +28,7 @@ int main(void)
 		}
 		else
 		{
-		printf("%d ", n);
+		printf("%d", n);
 		}
 		if (n != 100)
 		{
