@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- *
+ *print_diagonal - prints a diagonal to make one larger
+ *@n: variable that give us the diagonal
  *
  *
  */
