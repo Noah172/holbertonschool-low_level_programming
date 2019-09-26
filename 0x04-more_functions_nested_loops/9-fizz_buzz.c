@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 
 /**
  *
@@ -7,7 +8,7 @@
  *
  */
 
-int main (void)
+int main(void)
 {
 	int n;
 
