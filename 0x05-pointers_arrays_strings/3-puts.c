@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
+ *_puts - is the function that put the string
  *
- *
- *
+ *@str: is the variable used on the string
  *
  */
 
