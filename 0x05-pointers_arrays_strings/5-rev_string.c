@@ -1,23 +1,28 @@
 #include "holberton.h"
 
 /**
+ *rev_string - is the function that will invert the string
  *
- *
- *
+ *@s: is the array
  *
  */
 
 void rev_string(char *s)
 {
-	int a;
+	int n, t, i;
 
-	for(a = 0 ; s[a] != '\0' ; a++)
+	i = 0;
+
+	for (t = 0; s[t] != '\0'; t++)
 	{
-	;
 	}
-	while(a > 0)
+	t--;
+	while (i < t)
 	{
-		_putchar(s[a]);
-		a--;
+		n = s[i];
+		s[i] = s[t];
+		s[t] = n;
+		i++;
+		t--;
 	}
 }
