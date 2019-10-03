@@ -1,25 +1,25 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
- *
+ *_strncar - is the function that will make the new string
+ *@dest: is the first variable
+ *@src: is the second variable
+ *Return: return the new string
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int a, b;
 
-	i = 0;
-	while (dest[i] != '\0')
+	a = 0;
+	while (dest[a] != '\0')
 	{
-		i++;
+		a++;
 	}
 
-	for (j = 0; src[j] != '\0'; j++, i++)
+	for (b = 0; src[b] != '\0'; b++, a++)
 	{
-		j < n ? dest[i] = src[j] : j;
+		b < n ? dest[a] = src[b] : b;
 	}
 
 
