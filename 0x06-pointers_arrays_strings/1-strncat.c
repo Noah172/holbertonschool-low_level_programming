@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- *_strncar - is the function that will make the new string
+ *_strncat - is the function that will make the new string
  *@dest: is the first variable
  *@src: is the second variable
+ *@n: is the int that give the extra char
  *Return: return the new string
  */
 
