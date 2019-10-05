@@ -9,9 +9,9 @@
 
 char *cap_string(char *s)
 {
-	int a;
+	int a=0;
 
-	for (a = 0 ; s[a] != '\0' ; a++)
+	while (s[a] != '\0')
 	{
 		if (s[a] >= 'a' && s[a] <= 'z')
 		{
@@ -32,6 +32,7 @@ char *cap_string(char *s)
 				s[a] = s[a] - 32;
 			}
 		}
+		a++;
 	}
 	return (s);
 }
