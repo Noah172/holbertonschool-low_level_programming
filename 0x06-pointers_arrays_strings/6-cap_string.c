@@ -9,7 +9,7 @@
 
 char *cap_string(char *s)
 {
-	int a=0;
+	int a = 0;
 
 	while (s[a] != '\0')
 	{
@@ -34,5 +34,6 @@ char *cap_string(char *s)
 		}
 		a++;
 	}
+
 	return (s);
 }
