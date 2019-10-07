@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
- *
+ *_strchr - find a char
+ *@s: the string they give us
+ *@c: the char to find
+ *Retur:  always to 0
  */
 
 char *_strchr(char *s, char c)
