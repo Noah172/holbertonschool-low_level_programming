@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
- *
+ *_memcpy - copy the memory
+ *@dest: the string destiny
+ *@src: the source string
+ *@n: a variable
+ *Return: the new string
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
