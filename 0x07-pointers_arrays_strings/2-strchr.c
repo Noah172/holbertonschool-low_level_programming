@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *_strchr - find a char
+ *_strchr - find a char in a string
  *@s: the string they give us
  *@c: the char to find
- *Retur:  always to 0
+ *Return:  always to 0
  */
 
 char *_strchr(char *s, char c)
@@ -20,9 +20,11 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
+
 	if (s[i] == '\0')
 	{
-		return NULL;
+		return (NULL);
 	}
+
 	return (0);
 }
