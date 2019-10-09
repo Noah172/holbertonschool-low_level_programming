@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- *
+ *_puts_recursion - put the string as a recursion
+ *@s: the string
  *
  *
  */

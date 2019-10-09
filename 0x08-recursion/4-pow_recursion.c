@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
- *
+ *_pow_recursion - give the pow of two numbers
+ *@x: 1st integer
+ *@y: 2nd integer
+ *Return: the pow valor
  */
 
 int _pow_recursion(int x, int y)
