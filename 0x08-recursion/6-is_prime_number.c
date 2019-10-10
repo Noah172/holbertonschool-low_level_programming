@@ -5,7 +5,7 @@ int prime(int n, int x);
  *is_prime_number - is the funtion that return the 0
  *@n: is the int var
  *
- *Return: 0 if is not prime and 1 if it is 
+ *Return: 0 if is not prime and 1 if it is
  */
 
 int is_prime_number(int n)
@@ -29,7 +29,7 @@ int prime(int n, int x)
 {
 	if (n % x == 0 && n != x)
 	{
-		return(0);
+		return (0);
 	}
 	else if (x < n)
 	{
