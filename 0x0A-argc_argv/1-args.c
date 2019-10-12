@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ *main - the main function
+ *@argc: the number of args
+ *@argv: array of the args
+ *Return: always to 0.
  */
 
 int main(int argc, char* argv[])
@@ -18,7 +19,7 @@ int main(int argc, char* argv[])
 			printf("%s", argv[a-1]);
 		}
 	}
-	
+
 	printf("%i\n", a - 1);
 	return (0);
 }
