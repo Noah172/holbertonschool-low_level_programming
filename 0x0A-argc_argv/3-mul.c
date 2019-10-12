@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ *main - the main function
+ *@argc: the number of args
+ *@argv: array of the arrgs
+ *Return: always to 0
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int a, x = 1;
 
