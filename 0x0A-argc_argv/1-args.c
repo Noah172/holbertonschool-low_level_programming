@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	{
 		if (a > argc)
 		{
-			printf("%s", argv[a-1]);
+			printf("%s", argv[a - 1]);
 		}
 	}
 
