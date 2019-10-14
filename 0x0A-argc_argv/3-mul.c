@@ -10,21 +10,12 @@
 
 int main(int argc, char *argv[])
 {
-	int a, x = 1;
-
-	if (argc > 1)
-	{
-		for (a = 1; a < argc; a++)
-		{
-			x = x * atoi(argv[a]);
-		}
-
-		printf("%d\n", x);
-	}
+	if (argc != 3)
+		printf("Error\n");
 	else
 	{
-		printf("Error\n");
-	}
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 
+	}
 	return (0);
 }
