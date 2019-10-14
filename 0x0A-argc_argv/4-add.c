@@ -10,21 +10,32 @@
 
 int main(int argc, char *argv[])
 {
-        int a, x = 0;
+	int s, i;
 
-        if (argc > 1)
-        {
-                for (a = 1; a < argc; a++)
+	if (argc == 1)
+	{
+		printf("0\n");
+	}
+
+	else
+	{
+		s = 0;
+		for (i = 1; i < argc; i++)
 		{
-			x = x + atoi(argv[a]);
+
+			if ((*argv[i] >= 48 && *argv[i] <= 57) || *argv[i] == 45
+)
+			{
+				s = s + atoi(argv[i]);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
+		printf("%d\n", s);
+	}
 
-                printf("%d\n", x);
-        }
-        else if (argc == 1)
-        {
-                printf("0\n");
-        }
-
-        return (0);
+	return (0);
 }
