@@ -16,27 +16,16 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 
 	if (size == 0)
+		return (NULL);
+	try_me = malloc(size * sizeof(char));
+	if (try_me == NULL)
 	{
 		return (NULL);
 	}
-	else if (c == '\0')
-	{
-		return (NULL);
-	}
-	else
-	{
-		try_me = malloc(size * sizeof(char));
-		if (try_me == NULL)
-		{
-			return (NULL);
-		}
 
-		for (i = 0; i < size; i++)
-		{
-			try_me[i] = c;
-		}
-		try_me[i] = '\0';
-		return (try_me);
+	for (i = 0; i < size; i++)
+	{
+		*(try_me + i) = c;
 	}
-	return (0);
+	return (try_me);
 }
