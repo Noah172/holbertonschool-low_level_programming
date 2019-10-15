@@ -32,13 +32,12 @@ char *str_concat(char *s1, char *s2)
 	for (l = 0, m = 0; l < k; l++)
 	{
 		if (l < i)
-		
+
 			sneo[l] = s1[l];
 		else
 			sneo[l] = s2[m++];
-		
 	}
-	
+
 	sneo[l] = '\0';
 
 	return (sneo);
