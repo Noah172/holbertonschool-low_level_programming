@@ -25,7 +25,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		try_me = malloc(size * sizeof(char));
+		try_me = malloc((size + 1) * sizeof(char));
 		if (try_me == NULL)
 		{
 			return (NULL);
@@ -35,6 +35,7 @@ char *create_array(unsigned int size, char c)
 		{
 			try_me[i] = c;
 		}
+		try_me[i] = '\0';
 		return (try_me);
 	}
 	return (0);
