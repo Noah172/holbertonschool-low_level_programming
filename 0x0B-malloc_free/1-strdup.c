@@ -25,13 +25,20 @@ char *_strdup(char *str)
 		{
 		}
 
-		neo = malloc(i * sizeof(char));
-
-		for (j = 0; j <= i; j++)
+		neo = malloc((i + 1) * sizeof(char));
+		if (neo == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+		for (j = 0; j < i; j++)
 		{
 			neo[j] = str[j];
 		}
+		neo[j] = '\0';
 		return (neo);
+		}
 	}
 	return (0);
 }
