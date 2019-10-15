@@ -15,47 +15,31 @@ char *str_concat(char *s1, char *s2)
 	char *sneo;
 
 	if (s1 == NULL)
-	{
-		i = 0;
-	}
+		s1 = "";
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
 	if (s2 == NULL)
-	{
-		j = 0;
-	}
+		s2 = "";
+	for (j = 0; s2[j] != '\0'; j++)
+		;
 
-	if (s1 != NULL)
-	{
-		for (i = 0; s1[i] != '\0'; i++)
-		{
-
-		}
-	}
-
-	if (s2 != NULL)
-	{
-		for (j = 0; s2[j] != '\0'; j++)
-		{
-
-		}
-	}
-
-	k = i + j;
+	k = i + j + 1;
 
 	sneo = malloc(k * sizeof(char));
-	if (!sneo)
-	{
+	if (sneo == NULL)
 		return (NULL);
-	}
-
-	for (l = 0; l < k; l++)
+	for (l = 0, m = 0; l < k; l++)
 	{
-		if (s1[l] == '\0')
-		{
-			for (m = 0; s2[m] != '\0'; m++, l++)
-			sneo[l] = s2[m];
-		}
-		sneo[l] = s1[l];
+		if (l < i)
+		
+			sneo[l] = s1[l];
+		else
+			sneo[l] = s2[m++];
+		
 	}
-	return (0);
+	
+	sneo[l] = '\0';
+
+	return (sneo);
 }
