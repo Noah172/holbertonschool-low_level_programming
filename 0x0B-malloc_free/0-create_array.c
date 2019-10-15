@@ -26,10 +26,6 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		try_me = malloc(size * sizeof(char));
-		if (!(try_me))
-		{
-			return (NULL);
-		}
 
 		for (i = 0; i < size; i++)
 		{
