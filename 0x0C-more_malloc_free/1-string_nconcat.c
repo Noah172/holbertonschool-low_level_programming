@@ -13,28 +13,38 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *sneo;
-	unsigned int i, m, p = 0, j = 0;
+	unsigned int a, b, c, d, e;
 
-	while (s1[p] != '\0')
+	if (s1 == NULL)
+		s1 = "";
+	for (a = 0; s1[a] != '\0'; a++);
+	;
+
+	if (s2 == NULL)
+		s2 = "";
+	for (b = 0; s2[b] != '\0'; b++)
+		;
+
+
+	if (n <= b)
 	{
-		p++;
+		e = a + n;
+	}
+	else
+	{
+		e = a + b;
 	}
 
-	m = p + n;
-	sneo = malloc(m * sizeof(char));
-
-	for (i = 0; i < m; i++)
+	sneo = malloc(e * sizeof(char));
+	if (sneo == NULL)
+		return (NULL);
+	for (c = 0, d = 0; c < e; c++)
 	{
-		if (i < p)
-		{
-			sneo[i] = s1[i];
-		}
-		else
-		{
-			sneo[i] = s2[j++];
-		}
+		if (c < a)
+			sneo[c] = s1[c];
+		sneo[c] = s2[d++];
 	}
-	sneo[i] = '\0';
+	sneo[c] = '\0';
 
 	return (sneo);
 }
