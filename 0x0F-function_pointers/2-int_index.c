@@ -27,5 +27,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 		}
 		a++;
 	}
-	return (-34);
+	return (-1);
 }
