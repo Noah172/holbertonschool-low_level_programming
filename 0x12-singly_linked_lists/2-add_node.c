@@ -3,7 +3,7 @@
  *add_node - add new nodes to the list
  *@head: the head of the node
  *@str: the string of the node
- *Return: 
+ *Return: the new spaces
  */
 list_t *add_node(list_t **head, const char *str)
 {
