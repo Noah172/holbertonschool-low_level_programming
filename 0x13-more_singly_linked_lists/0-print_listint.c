@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  *print_listint - print the list
  *@h: structure that contains the list
