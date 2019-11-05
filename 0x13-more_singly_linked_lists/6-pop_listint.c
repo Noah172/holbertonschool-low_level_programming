@@ -19,7 +19,7 @@ int pop_listint(listint_t **head)
 	tmp = *head;
 
 
-	while(c < 1)
+	while (c < 1)
 	{
 		tmp = tmp->next;
 		c++;
