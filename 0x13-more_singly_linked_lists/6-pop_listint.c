@@ -6,26 +6,22 @@
  */
 int pop_listint(listint_t **head)
 {
-	int r, c = 0;
+	int r;
 	listint_t *tmp, *del;
 
-	if (head == NULL)
+	if (head == NULL && *head == NULL)
 		return (0);
 
 	del = *head;
-
 	r = del->n;
-
 	tmp = *head;
 
-
-	while (c < 1)
-	{
-		tmp = tmp->next;
-		c++;
-	}
-
+	tmp = tmp->next;
+	
 	*head = tmp;
+
+	free(del);
+
 
 	return (r);
 }
