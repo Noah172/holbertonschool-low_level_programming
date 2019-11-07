@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *
- *
- *
+ *binary_to_uint - convert binary into decimal
+ *@b: the binary number in a char array
+ *Return: the decimal number
  */
 unsigned int binary_to_uint(const char *b)
 {
