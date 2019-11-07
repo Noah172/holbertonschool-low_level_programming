@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *set_bit - set a bit in the memory
+ *clear_bit - clear a bit in the memory
  *@n: the number to modify
  *@index: the bit we want to set
  *Return: 1 if succes, -1 if there is an error
