@@ -1,7 +1,10 @@
 #include "lists.h"
 /**
- *
- *
+ *insert_nodeint_at_index - add a node to the list
+ *@head: the head of the list
+ *@idx: position of the new node
+ *@n: value of the list
+ *Return: the new node if succes
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
