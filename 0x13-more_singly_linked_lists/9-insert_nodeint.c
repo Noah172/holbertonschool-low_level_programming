@@ -1,48 +1,44 @@
 #include "lists.h"
 /**
- *insert_nodeint_at_index - add a node to the list
- *@head: the head of the list
- *@idx: position of the new node
- *@n: value of the list
- *Return: the new node if succes
+ * insert_nodeint_at_index - thsi function create a new node
+ * @head: the head of list
+ * @idx: the index to put the new node
+ * @n: the value to put in the nex node.
+ * Return: return the node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int c = 0;
-	listint_t *back, *front, *newn = malloc(sizeof(listint_t));
+	listint_t *newn, *list;
+	unsigned int i;
+
+	if (head == NULL)
+		return (NULL);
+
+	newn = malloc(sizeof(listint_t));
 
 	if (newn == NULL)
 		return (NULL);
-
 	newn->n = n;
-	back = *head;
-	front = *head;
 
-	if (idx == 0)
+	if (idx == '\0')
 	{
 		newn->next = *head;
 		*head = newn;
 		return (newn);
 	}
 
-	front = front->next;
+	list = *head;
 
-	while (c < idx - 1)
+	for (i = 0; list; i++)
 	{
-		back = back->next;
-		front = front->next;
-		c++;
-		if (back == NULL)
-			return (NULL);
+		if (i == idx - 1)
+		{
+			newn->next = list->next;
+			list->next = newn;
+			return (newn);
+		}
+		list = list->next;
 	}
-	if (c == idx)
-	{
-		free(newn);
-		return (NULL);
-	}
-
-	back->next = newn;
-	newn->next = front;
-
-	return (newn);
+	free(newn);
+	return (NULL);
 }
