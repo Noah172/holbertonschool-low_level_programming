@@ -18,7 +18,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (index == '\0')
 	{
 		*head = list->next;
-		free(actual);
+		free(list);
 		return (1);
 	}
 
@@ -30,6 +30,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	ahead = list->next->next;
 	free(list->next);
-	list->next = next;
+	list->next = ahead;
 	return (1);
 }
