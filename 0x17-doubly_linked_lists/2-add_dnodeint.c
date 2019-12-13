@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
+ *add_dnodeint - add node in the head of a double linked list
+ *@head: the head of the list
+ *@n: the int value of the new node
+ *Return: the direction of the new node
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
