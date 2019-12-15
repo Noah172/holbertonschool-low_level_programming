@@ -12,7 +12,7 @@ size_t dlistint_len(const dlistint_t *h)
 	header = h;
 	if (header == NULL)
 		return (a);
-	while(header != NULL)
+	while (header != NULL)
 	{
 		header = header->next;
 		a++;
