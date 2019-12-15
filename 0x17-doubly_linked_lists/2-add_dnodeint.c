@@ -13,6 +13,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	neon = malloc(sizeof(dlistint_t));
 	if (neon == NULL)
 		return (NULL);
+
 	neon->prev = NULL;
 	neon->n = n;
 	if (h == NULL)
