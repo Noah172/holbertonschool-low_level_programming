@@ -21,11 +21,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		neon->next = NULL;
 		return (neon);
 	}
-	else
-	{
-		neon->next = h;
-		h->prev = neon;
-		*h = neon;
-		return (neon);
-	}
+	neon->next = h;
+	h->prev = neon;
+	*h = neon;
+	return (neon);
 }
