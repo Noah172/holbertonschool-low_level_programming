@@ -18,12 +18,12 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	neon->n = n;
 	if (h == NULL)
 	{
-		*h = new;
+		h = neon;
 		neon->next = NULL;
 		return (neon);
 	}
 	neon->next = h;
 	h->prev = neon;
-	*h = neon;
+	h = neon;
 	return (neon);
 }
