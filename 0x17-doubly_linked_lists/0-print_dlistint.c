@@ -12,9 +12,10 @@ size_t print_dlistint(const dlistint_t *h)
 	header = h;
 	if (header == NULL)
 		return (a);
-	while(header != NULL)
+	while (header != NULL)
 	{
 		int n = header->n;
+
 		printf("%d\n", n);
 		header = header->next;
 		a++;
