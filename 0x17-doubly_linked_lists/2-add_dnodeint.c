@@ -21,11 +21,12 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 		neo->next = *head;
 		*h = neo;
+		return (neo);
 	}
 	else
 	{
 		h = neo;
 		neo->next = NULL;
+		return (neo);
 	}
-	return (neo);
 }
