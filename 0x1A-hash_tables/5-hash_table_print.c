@@ -12,7 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 	if (ht)
 	{
 		printer = ht->array[c];
-		putchar('{');
+		printf("{");
 		while (c < ht->size)
 		{
 			while (printer)
@@ -22,6 +22,6 @@ void hash_table_print(const hash_table_t *ht)
 				printer = printer->next;
 			}
 		}
-		putchar('}');
+		printf("}");
 	}
 }
