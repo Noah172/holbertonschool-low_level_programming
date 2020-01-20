@@ -5,24 +5,23 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	hash_node_t *printer = NULL;
+	hash_node_t *print = NULL;
 	unsigned long int c = 0;
 	char *cm = "";
 
-	if (ht)
+	if (ht != NULL)
 	{
-		printer = ht->array[c];
 		printf("{");
-		while (c < ht->size)
+		for (; c < ht->size; c++)
 		{
-			while (printer)
+			print = ht->array[c];
+			while (print)
 			{
-				printf("%s'%s': '%s'", cm, printer->key, printer->value);
+				printf("%s'%s': '%s'", cm, print->key, print->value);
 				cm = ", ";
-				printer = printer->next;
+				print = print->next;
 			}
-		c++;
 		}
-		printf("}");
+		printf("}\n");
 	}
 }
